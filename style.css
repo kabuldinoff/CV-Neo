@@ -1,22 +1,32 @@
 body {
     min-height: 100vh;
     background-color: #003B00;
-    color: white;
+    background-image: url('img/background-matrix.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    font-family: Courier New, monospace;
     text-shadow: 0 0 3px #0D0208, 0px 0px 15px #00ff00, 0px 0px 9px #56b000, 0px 0px 15px #006400, 0px 0px 5px #006400;
     margin: 0 auto;
     width: 920px;
+}
+
+body, a {
+    color: white;
 }
 
 img {
     border: #0D0208 solid 1px;
     filter: drop-shadow(0 0 2px #0D0208);
     height: auto;
-    width: 250px;
+    width: 200px;
+    margin-top: 10px;
 }
 
 .panel {
-    display: grid;
-    grid-gap: 20px;
+    background-color: #0D0208;
+    display: flex;
+    gap: 20px;
     border: 2px solid #0D0208;
     padding: 20px;
     transition: all 0.3s ease;
@@ -28,28 +38,21 @@ img {
 
         img {
             border: #008F11 solid 1px;
-            filter: drop-shadow(0 0 2px #008F11)
+            filter: drop-shadow(0 0 2px #008F11);
         }
     }
 
-    .box {
-        max-width: 280px;
+    .left-side {
+        min-width: 60%;
     }
 
-    .a {
-        grid-column: 1 / 3;
-        grid-row: 1;
-    }
-    .b {
-        grid-column: 3 ;
-        grid-row: 1 / 3;
-    }
-    .c {
-        grid-column: 1 ;
-        grid-row: 2 ;
-    }
-    .d {
-        grid-column: 2;
-        grid-row: 2;
+    .right-side {
+        border: 1px solid #008F11;
+        background-color: white;
+        color: #0D0208;
+        text-shadow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
