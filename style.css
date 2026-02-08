@@ -1,5 +1,4 @@
 body {
-    min-height: 100vh;
     background-color: #003B00;
     background-image: url('img/background-matrix.png');
     background-repeat: no-repeat;
@@ -8,7 +7,7 @@ body {
     font-family: Courier New, monospace;
     text-shadow: 0 0 3px #0D0208, 0px 0px 15px #00ff00, 0px 0px 9px #56b000, 0px 0px 15px #006400, 0px 0px 5px #006400;
     margin: 0 auto;
-    width: 920px;
+    width: 960px;
 }
 
 body, a {
@@ -30,7 +29,6 @@ img {
     border: 2px solid #0D0208;
     padding: 20px;
     transition: all 0.3s ease;
-    min-height: 100vh;
     margin: 40px;
 
     &:hover{
